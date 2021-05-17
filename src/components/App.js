@@ -1,6 +1,6 @@
 import React from 'react';
 import { 
-  BrowserRouter,
+  HashRouter,
   Route,
   Switch
  } from 'react-router-dom';
@@ -15,7 +15,7 @@ import NotFound from './NotFound';
 
 const App = () => (
   // Wrap the app in a BrowserRouter Tag
-  <BrowserRouter>
+  <HashRouter>
     <div className="container">
       <Header />
       {/* Place route components here */}
@@ -28,7 +28,7 @@ const App = () => (
         <Route component={ NotFound } />
       </Switch>
     </div>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default App;
